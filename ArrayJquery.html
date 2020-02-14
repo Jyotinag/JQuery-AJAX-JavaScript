@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    <head>
+        <title>
+            Making a list with contents from an array
+        </title>
+        <script src="js/jQuery-3.3.1-slim.min.js"></script>
+    </head>
+    <body style="text-align: center">
+        <script>
+            $(document).ready(function(){
+               var Array = ["Apple","Banana","Cake","Orange","Mango"];
+                $("result").append("<ul id = my-ul>");
+                $.each(Array,function(index,value){
+                   $("#result").append("<li>"+value+"</li>"); 
+                });
+                $("result").append("</ul>");
+            });
+        </script>
+        <div id="result"></div>
+    </body>
+</html>

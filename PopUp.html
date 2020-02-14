@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    <head>
+        <title>
+            Displaying a confirmation dialogue when clicking a link
+        </title>
+        <script src="js/jQuery-3.3.1-slim.min.js">
+        </script>
+    </head>
+    <body style="text-align: center">
+        <h1 style="color: aqua" >Bit Mascot</h1>
+        <a href="#" class="confirm">Link</a><br />
+        <a href="#" class="confirm">Link</a><br />
+        <a href="#" class="confirm">Link</a><br />
+        <script>
+            $('.confirm').on('click',function(){
+                             return confirm('Are You Sure?');
+                             });
+        </script>
+    </body>
+</html>
